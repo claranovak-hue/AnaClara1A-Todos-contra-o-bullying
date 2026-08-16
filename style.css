@@ -1,0 +1,529 @@
+/* =========================================
+   CONFIGURAÇÕES GERAIS
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7fb;
+    color: #202936;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   CABEÇALHO
+========================================= */
+
+header {
+    background: linear-gradient(135deg, #162447, #1f5f8b);
+    color: white;
+    padding: 20px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #7dd3fc;
+}
+
+
+/* =========================================
+   BANNER PRINCIPAL
+========================================= */
+
+.hero {
+    min-height: 600px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 50px 20px;
+
+    background:
+        linear-gradient(
+            rgba(10, 25, 47, 0.75),
+            rgba(10, 25, 47, 0.75)
+        ),
+        url("https://images.unsplash.com/photo-1529390079861-591de354faf5?auto=format&fit=crop&w=1600&q=80");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+}
+
+.hero-content {
+    max-width: 850px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 21px;
+    margin-bottom: 30px;
+}
+
+
+/* =========================================
+   BOTÕES
+========================================= */
+
+.botao {
+    display: inline-block;
+
+    background: #38bdf8;
+    color: #082f49;
+
+    padding: 14px 28px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+
+    border: none;
+
+    cursor: pointer;
+}
+
+.botao:hover {
+    transform: scale(1.05);
+    background: #7dd3fc;
+}
+
+
+/* =========================================
+   SEÇÕES
+========================================= */
+
+section {
+    padding: 70px 8%;
+}
+
+.titulo {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.titulo h2 {
+    color: #162447;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.titulo p {
+    color: #64748b;
+}
+
+
+/* =========================================
+   CARDS
+========================================= */
+
+.cards {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 25px;
+}
+
+.card {
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+}
+
+.card h3 {
+    color: #1f5f8b;
+    margin-bottom: 12px;
+    font-size: 22px;
+}
+
+.icone {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+
+/* =========================================
+   IMAGENS
+========================================= */
+
+.imagem {
+    width: 100%;
+
+    height: 400px;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+
+    margin-top: 30px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================================
+   COMPARAÇÃO
+========================================= */
+
+.comparacao {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 30px;
+}
+
+.box {
+    padding: 35px;
+
+    border-radius: 20px;
+
+    color: white;
+}
+
+.bullying {
+    background: #1f5f8b;
+}
+
+.cyber {
+    background: #162447;
+}
+
+.box h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+
+/* =========================================
+   PASSOS / SOLUÇÕES
+========================================= */
+
+.passos {
+    max-width: 900px;
+    margin: auto;
+}
+
+.passo {
+    background: white;
+
+    padding: 25px;
+
+    margin: 15px 0;
+
+    border-left: 6px solid #38bdf8;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 3px 12px rgba(0, 0, 0, 0.06);
+
+    transition: 0.3s;
+}
+
+.passo:hover {
+    transform: translateX(5px);
+}
+
+.passo strong {
+    color: #1f5f8b;
+    font-size: 19px;
+}
+
+
+/* =========================================
+   FRASE
+========================================= */
+
+.frase {
+    text-align: center;
+
+    background: #e0f2fe;
+
+    padding: 60px 20px;
+}
+
+.frase h2 {
+    color: #162447;
+
+    font-size: 32px;
+}
+
+.frase p {
+    margin-top: 15px;
+
+    font-size: 19px;
+}
+
+
+/* =========================================
+   VÍDEOS
+========================================= */
+
+.videos {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(300px, 1fr));
+
+    gap: 30px;
+}
+
+.video {
+    background: white;
+
+    padding: 15px;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.video h3 {
+    color: #1f5f8b;
+
+    margin-top: 15px;
+}
+
+.video p {
+    margin-top: 5px;
+}
+
+iframe {
+    width: 100%;
+
+    height: 250px;
+
+    border: none;
+
+    border-radius: 12px;
+}
+
+
+/* =========================================
+   ÁREA DE AJUDA
+========================================= */
+
+.ajuda {
+    background:
+        linear-gradient(
+            135deg,
+            #162447,
+            #1f5f8b
+        );
+
+    color: white;
+
+    text-align: center;
+
+    border-radius: 25px;
+
+    padding: 60px 30px;
+}
+
+.ajuda h2 {
+    font-size: 38px;
+
+    margin-bottom: 15px;
+}
+
+.ajuda p {
+    max-width: 700px;
+
+    margin: 15px auto;
+}
+
+.botao-ajuda {
+    background: #ef4444;
+
+    color: white;
+
+    font-size: 18px;
+
+    padding: 16px 30px;
+
+    margin-top: 20px;
+}
+
+.botao-ajuda:hover {
+    background: #dc2626;
+}
+
+
+/* Mensagem escondida inicialmente */
+
+#mensagemAjuda {
+    display: none;
+
+    margin-top: 35px;
+
+    background: rgba(255, 255, 255, 0.1);
+
+    padding: 30px;
+
+    border-radius: 15px;
+}
+
+#mensagemAjuda h3 {
+    font-size: 25px;
+
+    margin-bottom: 15px;
+}
+
+#mensagemAjuda .botao {
+    margin-top: 15px;
+}
+
+
+/* =========================================
+   RODAPÉ
+========================================= */
+
+footer {
+    background: #0f172a;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 35px 20px;
+}
+
+footer p {
+    margin: 8px;
+}
+
+footer a {
+    color: #7dd3fc;
+
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   RESPONSIVIDADE
+========================================= */
+
+@media (max-width: 800px) {
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .comparacao {
+        grid-template-columns: 1fr;
+    }
+
+    .menu {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav {
+        width: 100%;
+
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+
+        margin: 5px;
+
+        font-size: 14px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    section {
+        padding: 50px 5%;
+    }
+
+    .hero {
+        min-height: 500px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .titulo h2 {
+        font-size: 29px;
+    }
+
+    .imagem {
+        height: 280px;
+    }
+
+    iframe {
+        height: 210px;
+    }
+
+}
